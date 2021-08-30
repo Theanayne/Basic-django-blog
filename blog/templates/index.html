@@ -1,0 +1,46 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h3>Welcome to TheBlog</h3>
+<p>TheBlog is a basic and simple Html and Django website with some few css</p>
+
+<h5> <span style="color: red;
+    font-size: 40px;
+    font-weight: bold;">&#8265;</span> in the left side, there is a menu : </h5>
+<ul>
+	<li>Click on <strong>blog</strong> to see posts (Published articles)</li>
+	<li>Click on <strong>Authors</strong> to see bloggers or authors with theirs articles and bio</li>
+	<li><strong>Login</strong> is only for the admin</li>
+</ul>
+<br>
+
+<h5>To run the project on your local, <br>
+On your terminal follow the below commands</h5>
+<pre style="    color: #c7254e;
+    width: 44%;
+    border-radius: 0px;
+    border-color: #00000017;
+    background-color: #f9f2f4;
+    font-family: inherit;
+    font-size: 14px;">
+git clone https://github.com/Theanayne/Basic-django-blog.git
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py collectstatic
+python manage.py test
+python manage.py createsuperuser
+python manage.py runserver
+</pre>
+
+
+<br><br>
+<h5>Find me on : </h5>
+<ul>
+	<li> <strong> <a href="https://www.linkedin.com/in/theanayne/">linkedin</a> </strong> </li>
+	<li> <strong> <a href="https://twitter.com/theanayne">Twitter</a> </strong> </li>
+	<li> <strong> <a href="https://github.com/Theanayne/">Github</a> </strong> </li>
+</ul>
+
+
+{% endblock %}

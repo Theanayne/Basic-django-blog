@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h3>Author&nbsp;:&nbsp;<span style="font-size: 87%;color: #093f5fcf;"> {{blogger}} <span> </h3>
+    <h3 style="margin-top: 6px;">Bio&nbsp;:&nbsp;<span style="font-size: 70%;color: #093f5fcf;"> {{blogger.bio}}</span> </h3>
+    
+    
+
+    {% if blog_list %}
+    <h3>Posts list</h3>
+    <ul>
+
+      {% for blog in blog_list %}
+      <li>
+        <a href="{{ blog.get_absolute_url }}">{{ blog.name }}</a> ({{blog.post_date}})</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    {% else %}
+      <p>This author hasn't posted anything yet.</p>
+    {% endif %}       
+{% endblock %}
+
