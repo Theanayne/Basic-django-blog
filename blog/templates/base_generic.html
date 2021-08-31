@@ -13,7 +13,7 @@
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
-<body style="width: 87%;">
+<body style="width: 100%;">
 
 <div class="container-fluid">
 
@@ -29,7 +29,7 @@
   <ul class="sidebar-nav">
    {% if user.is_authenticated %}
      <li>Welcome {{ user.get_username }}</li>
-     <li><a href="../admin/">Dashboard</a></li> 
+     <li><a href="{% url 'admin:index' %}">Dashboard</a></li> 
      <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
    {% else %}
      <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   

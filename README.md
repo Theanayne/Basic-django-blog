@@ -8,7 +8,7 @@ On your terminal follow the below commands :
    python manage.py migrate
    python manage.py collectstatic
    python manage.py test
-   python manage.py createsuperuser
+   winpty python manage.py createsuperuser
    python manage.py runserver
    ```
 Enjoy it on http://127.0.0.1:8000/
