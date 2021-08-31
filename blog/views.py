@@ -25,7 +25,7 @@ class BlogListView(generic.ListView):
     Generic class-based view for a list of all blogs.
     """
     model = Blog
-    paginate_by = 5
+    paginate_by = 12
 
     
 from django.shortcuts import get_object_or_404
@@ -35,7 +35,7 @@ class BlogListbyAuthorView(generic.ListView):
     Generic class-based view for a list of blogs posted by a particular BlogAuthor.
     """
     model = Blog
-    paginate_by = 5
+    paginate_by = 7
     template_name ='blog/blog_list_by_author.html'
     
     def get_queryset(self):
@@ -70,7 +70,7 @@ class BloggerListView(generic.ListView):
     Generic class-based view for a list of bloggers.
     """
     model = BlogAuthor
-    paginate_by = 5
+    paginate_by = 7
 
 
 from django.contrib.auth.mixins import LoginRequiredMixin
