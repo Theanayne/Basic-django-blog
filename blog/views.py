@@ -25,7 +25,7 @@ class BlogListView(generic.ListView):
     Generic class-based view for a list of all blogs.
     """
     model = Blog
-    paginate_by = 12
+    paginate_by = 7
 
     
 from django.shortcuts import get_object_or_404
