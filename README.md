@@ -2,7 +2,7 @@
 To run the project on your local,
 On your terminal follow the below commands :
    ```
-   git clone https://github.com/Theanayne/Classic_Django_blog.git
+   git clone https://github.com/Theanayne/Basic_Django_blog.git
    pip install -r requirements.txt
    python manage.py makemigrations
    python manage.py migrate
